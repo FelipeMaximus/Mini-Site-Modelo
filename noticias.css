@@ -1,0 +1,190 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+:root{           /* Aqui podemos criar uma variavel personalizada*/
+    --cor0:rgb(163, 61, 61);
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+
+    --fonte-destaque: 'Bebas Neue', cursive;
+}
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(233, 228, 228);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
+
+header{
+    background-image: linear-gradient(to top, rgb(17, 17, 17), rgb(141, 18, 18));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1{
+    color: rgba(233, 6, 6, 0.979);
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgb(177, 172, 172);
+}
+
+header > p{
+    color: white;
+    max-width: 500px; /* Responsividade*/
+    padding-right: 10px; /* Responsividade*/
+    padding-left: 10px; /* Responsividade*/
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgb(99, 97, 97);
+}
+
+nav{
+    background-color: rgb(17, 17, 17);
+    padding: 10px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.568);
+}
+
+nav > a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition-duration: 1s; /* Animação*/
+}
+
+nav > a:hover{
+    background-color: red;
+    color: rgb(139, 61, 61);
+}
+
+main{
+    min-width: 300px; /* Responsividade*/
+    max-width: 1000px; /* Responsividade*/
+    margin: auto; /* Responsividade e fica no meio*/ 
+    padding: 20px; /* Responsividade*/
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1{
+    color: var(--cor0);
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2{
+    font-family: var(--fonte-destaque);
+    color: rgb(126, 59, 59);
+    font-weight: normal;
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, red,transparent);
+    text-indent: 8px;
+}
+
+main p{
+    margin: 15px 0px; /* Arrumando espaçamento dos paragrafos*/
+    text-align: justify;
+    text-indent: 30px; /* Recuo do paragrafo*/
+    font-size: 1em;
+    line-height: 2em; /* Espacamento entre linhas*/
+}
+
+main strong{
+    color: rgb(158, 47, 47);
+    font-weight: bold;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: brown;
+    background-color: red;
+    padding: 2px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: rgb(180, 99, 99);
+}
+
+main img{
+    width: 100%; /* Responsividade*/
+}
+
+main img.pequena{
+    max-width: 350px; /* Responsividade*/
+    display: block; /* Responsividade*/
+    margin: auto; /* Responsividade*/
+}
+
+div.video{
+    background-color: red;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color: rgb(248, 122, 122);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.295);
+}
+
+aside h3{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul{
+    list-style-type: '\1F4D6\00A0\00A0'; /* Codigos finais de espaçamento*/
+    list-style-position: inside;
+    columns: 2; /* Divide a coluna em dois*/
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none; /* Para links*/
+}
+
