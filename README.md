@@ -4,7 +4,7 @@
 
 Este projeto foi criado visando FINS EDUCATIVOS.
 
-# Projeto Java Web usando Spring Boot - Hibernate - JDBC
+# Projeto Web Site
 
   - [x] HTML 
   - [x] CSS
